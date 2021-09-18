@@ -51,15 +51,19 @@ valine:
   pageSize: '10'
   placeholder: '请输入...'
 
-fireworksjs: true
+#fireworksjs: true
+lihwjs: true
 live2d:
   enable: true
 
 gitalk:
   enable: true
-  clientID: de6620f1d7af58fe6167  # 换成你申请 GitHub Application 网页上对应的 Client ID 与 Client Secret 参数
-  clientSecret: 0620d04cfe36481d4a41a6d8d3eacc47270b76d2  # 同上
-  repo: Gitalk  # 换成你创建的仓库，首先确保该仓库已经创建，其次只需要写名称，比如 "gitalk"，否则 "问题三"
-  owner: poorzha # 你的 Github ID（Github 用户名）
-  admin: poorzha  # 你的 Github ID 就可以，官方注释（Facebook-like distraction free mode）说明还可以添加其他有权限的人
+  clientID: de6620f1d7af58fe6167  
+  clientSecret: 0620d04cfe36481d4a41a6d8d3eacc47270b76d2 
+  repo: Gitalk  
+  owner: poorzha 
+  admin: poorzha  
 
+auto_excerpt:
+  enable: true
+  length: 150

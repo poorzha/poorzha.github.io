@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "你可以不入党，但一定要爱国", "阿巴"];
+		messageArray = ["你在偷懒嘛？", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","禁止摸鱼！！","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "哦呜，该去喝水了sir", "你也会一个人静静地想事情嘛？"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -97,7 +97,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+			if (!document.hidden) showMessage(["唔～恍然若世","此地空余烂柯人","你知道吗？页外一天，页内一年","看不见我时有没有想我哇？","日子过得好快呢……"], 6000, 9);
 		});
 	})();
 
@@ -106,13 +106,13 @@ function loadWidget(config) {
 		if (location.pathname === "/") { // 如果是主页
 			const now = new Date().getHours();
 			if (now > 5 && now <= 7) text = "早上好！一日之计在于晨，美好的一天就要开始了。";
-			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
-			else if (now > 11 && now <= 13) text = "中午了，工作了一个上午，现在是午餐时间！";
-			else if (now > 13 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
+			else if (now > 7 && now <= 11) text = "上午好！开始学习了嘛？注意不要久坐，多起来走动走动哦！";
+			else if (now > 11 && now <= 13) text = ["中午了，工作了一个上午，现在是午餐时间！出门记得戴口罩哇！","太阳晒晒，出门记得带帽子或者太阳伞哦"];
+			else if (now > 13 && now <= 17) text = "午后很容易犯困呢，但吃饱饭不要马上睡觉哦。";
 			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
-			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安～", "深夜时要爱护眼睛呀！"];
-			else text = "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？";
+			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安哦~", "深夜时要爱护眼睛呀！","早睡能增强免疫力"];
+			else text = ["你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？","这么晚了还在干嘛？打游戏？看小说？看电视剧？还是有心事？"];
 		} else if (document.referrer !== "") {
 			const referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];
