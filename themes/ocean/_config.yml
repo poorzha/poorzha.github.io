@@ -14,7 +14,7 @@ brand: /images/zha.svg
 ocean:
   overlay: true
   path: /images/ocean/
-  brand: /images/hexo-inverted.svg
+  brand: /images/zha.png
 
 # Content
 excerpt_link: Read More...

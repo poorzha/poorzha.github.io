@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["你在偷懒嘛？", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","禁止摸鱼！！","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "哦呜，该去喝水了sir", "你也会一个人静静地想事情嘛？"];
+		messageArray = ["你在偷懒嘛？","(●ˇ∀ˇ●)", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","禁止摸鱼！！","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "看到这条消息就该去喝水了sir", "你也会一个人静静地想事情嘛？"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -77,7 +77,7 @@ function loadWidget(config) {
 			Live2D.captureFrame = true;
 		});
 		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("https://github.com/stevenjoezhang/live2d-widget");
+			open("https://user.qzone.qq.com/2522292382");
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
@@ -97,7 +97,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage(["唔～恍然若世","此地空余烂柯人","你知道吗？页外一天，页内一年","看不见我时有没有想我哇？","日子过得好快呢……"], 6000, 9);
+			if (!document.hidden) showMessage(["唔～恍然若世","此地空余烂柯人","你知道吗？页外一天，页内一年","看不见我时有没有想我哇？","日子过得好快呢……","Hello! sb."], 6000, 9);
 		});
 	})();
 
@@ -112,7 +112,7 @@ function loadWidget(config) {
 			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
 			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安哦~", "深夜时要爱护眼睛呀！","早睡能增强免疫力"];
-			else text = ["你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？","这么晚了还在干嘛？打游戏？看小说？看电视剧？还是有心事？"];
+			else text = ["你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？","这么晚了还在干嘛？打游戏？看小说？赶作业？看电视剧？还是有心事？","不会吧不会吧，不会还有人没睡觉吧。。"];
 		} else if (document.referrer !== "") {
 			const referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];

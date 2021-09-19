@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://poorzha.top
+url: http://poorzha.github.io
 #permalink: :year/:month/:day/:title/
 #permalink_defaults:
 permalink: posts/:abbrlink/
@@ -144,3 +144,6 @@ neat_js:
    - '**/*.min.js'
    - '**/jquery.fancybox.pack.js'
    - '**/index.js'
+
+
+
