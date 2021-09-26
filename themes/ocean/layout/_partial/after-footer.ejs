@@ -33,6 +33,6 @@
 <% } %> 
 
 
-<% if (theme.baidustatistic){ %>
-  <%- ('/_partial/post/baidustatistic.ejs') %>
+<% if (theme.baidustatistic.enable){ %>
+  <%- partial('post/baidustatistic') %>
 <% } %>
