@@ -69,6 +69,7 @@ auto_excerpt:
   enable: true
   length: 100
 
-# 是否开启访问量统计功能(不蒜子)
-  # visitors count
-  counter: true
+# 百度统计
+baidustatistic:
+  enable: true
+  siteid: 28c661f0c6292a2c1e721f1b08b229fd
