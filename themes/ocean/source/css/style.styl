@@ -10,8 +10,12 @@
 
 html, body
   height: 100%
+  
+
+
 
 html
+  cursor: url(/images/zha.cur),auto !important
   font-size font-size-browser
   -webkit-text-size-adjust 100%
   -ms-text-size-adjust 100%
@@ -19,6 +23,9 @@ html
   -webkit-tap-highlight-color transparent
 
 body
+
+
+  
   position relative
   background-color body-background
   font-family font-family-base
@@ -33,9 +40,11 @@ body
     background sea-lighter
     color froth
 a
+  
   color link-color
   &:hover
     color link-hover-color
+    cursor: url(/images/link.cur),auto !important
   &:active
     color link-active-color
   &.disabled
@@ -43,7 +52,11 @@ a
 
 img
   max-width 100%
+  cursor: url(/images/img.cur),auto
 
+input
+  &:hover
+    cursor: url(/images/text.cur),auto
 @import "_extend"
 @import "_partial/layou"
 @import "_partial/lists"
@@ -66,3 +79,4 @@ img
 
 if sidebar
   @import "_partial/sidebar"
+
