@@ -97,7 +97,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage(["唔～恍然若世","此地空余烂柯人","你知道吗？页外一天，页内一年","看不见我时有没有想我哇？","日子过得好快呢……","Hello! sb."], 6000, 9);
+			if (!document.hidden) showMessage(["唔～恍然若世","刚建设祖国回来吗？","此地空余烂柯人","你知道吗？页外一天，页内一年","看不见我时有没有想我哇？","日子过得好快呢……","Hello! sb."], 6000, 9);
 		});
 	})();
 

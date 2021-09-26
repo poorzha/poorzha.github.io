@@ -17,7 +17,7 @@ ocean:
   brand: /images/zha.png
 
 # Content
-excerpt_link: Read More...
+excerpt_link: ✔
 
 # MIIT ICP/IP/DOMAIN
 beian:
@@ -64,6 +64,11 @@ gitalk:
   owner: poorzha 
   admin: poorzha  
 
+#博客自动阅读全文
 auto_excerpt:
   enable: true
-  length: 150
+  length: 100
+
+# 是否开启访问量统计功能(不蒜子)
+  # visitors count
+  counter: true
