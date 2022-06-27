@@ -69,7 +69,6 @@ auto_excerpt:
   enable: true
   length: 100
 
-# 百度统计
 baidustatistic:
   enable: true
   siteid: 28c661f0c6292a2c1e721f1b08b229fd

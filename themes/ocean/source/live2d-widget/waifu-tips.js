@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["你在偷懒嘛？","(●ˇ∀ˇ●)", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","禁止摸鱼！！","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "看到这条消息就该去喝水了sir", "你也会一个人静静地想事情嘛？"];
+		messageArray = ["你在偷懒嘛？","(●ˇ∀ˇ●)","啊对对对", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～","禁止摸鱼！！","别盯着海浪发呆哇~","猫狗转转转~", "嗨～快来逗我玩吧！", "看到这条消息就该去喝水了sir", "你也会一个人静静地想事情嘛？","阿巴阿巴"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -77,7 +77,7 @@ function loadWidget(config) {
 			Live2D.captureFrame = true;
 		});
 		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("https://user.qzone.qq.com/2522292382");
+			open("https://github.com/stevenjoezhang/live2d-widget");
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
